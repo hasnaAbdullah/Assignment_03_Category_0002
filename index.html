@@ -36,6 +36,7 @@
               "primary-color": "#179800",
               "secondary-color": "#EFEBE3",
               "text-color": "#111111",
+              "btn-hover": "#1F2937",
               "white-color": "#FFFFFF",
             },
             fontFamily: {
@@ -47,5 +48,70 @@
       };
     </script>
   </head>
-  <body class="text-text-color font-sora"></body>
+  <body class="text-text-color font-sora">
+    <!-- header outer container -->
+    <div class="">
+      <!-- header section -->
+      <header class="max-w-[1320px] mx-auto">
+        <div
+          class="navbar justify-between border-b border-primary-color lg:border-none pt-8"
+        >
+          <!-- left menu with logo -->
+          <div class="navbar-start w-fit">
+            <img
+              class="hidden lg:block"
+              src="c2-assets/logo-header.png"
+              alt="header section's logo"
+            />
+            <img class="lg:hidden" src="c2-assets/mobile-nav-logo.png" alt="" />
+          </div>
+
+          <!-- center navbar -->
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li><a class="text-xl" href="#">Product</a></li>
+              <li><a class="text-xl" href="#">Services</a></li>
+              <li><a class="text-xl" href="#">Contact us</a></li>
+            </ul>
+          </div>
+
+          <!-- navbar right side buttons and icons -->
+          <div class="navbar-end w-fit">
+            <div class="hidden lg:block space-x-3">
+              <img
+                class="inline-block cursor-pointer"
+                src="c2-assets/search.png"
+                alt=""
+              />
+              <img
+                class="inline-block cursor-pointer"
+                src="c2-assets/shopping-cart.png"
+                alt=""
+              />
+              <a
+                href="#"
+                class="btn btn-outline border-2 border-primary-color px-7 font-normal text-xl"
+                >Login</a
+              >
+              <a
+                class="btn btn-primary bg-primary-color border-none text-white px-7 font-normal text-xl hover:bg-btn-hover"
+                href="#"
+                >Register</a
+              >
+            </div>
+            <!-- menu icon -->
+            <div class="dropdown">
+              <div
+                tabindex="0"
+                role="button"
+                class="btn btn-ghost px-0 lg:hidden"
+              >
+                <i class="fa-solid fa-bars text-2xl text-primary-color"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+  </body>
 </html>
