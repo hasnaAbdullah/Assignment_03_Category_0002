@@ -47,6 +47,21 @@
         },
       };
     </script>
+    <style>
+      .animated-span {
+        animation: span-animation 2s ease-in-out infinite;
+      }
+      @keyframes span-animation {
+        0% {
+        }
+        50% {
+          opacity: 0.2;
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+    </style>
   </head>
   <body class="text-text-color font-sora">
     <!-- header outer container -->
@@ -127,13 +142,15 @@
           >
             <h1 class="font-semibold text-3xl lg:text-[56px] lg:leading-[60px]">
               Freshness You
-              <span class="text-primary-color"
+              <span class="animated-span text-primary-color animate-wiggle"
                 >Can <br />
                 Count</span
               >
               On, Prices You’ll Love!
             </h1>
-            <p class="font-light max-w-[799px] mx-auto lg:text-xl">
+            <p
+              class="font-light max-w-[799px] mx-auto lg:text-xl animate-pulse"
+            >
               Shop your daily essentials at unbeatable prices. From fresh
               produce to pantry staples, we’ve got you covered every day!
             </p>
