@@ -50,65 +50,101 @@
   </head>
   <body class="text-text-color font-sora">
     <!-- header outer container -->
-    <div class="">
+    <div class="bg-gradient-to-t from-[#EFEBE3] to-[#FFFFFF]">
       <!-- header section -->
       <header class="max-w-[1320px] mx-auto">
-        <div
-          class="navbar justify-between border-b border-primary-color lg:border-none pt-8"
-        >
-          <!-- left menu with logo -->
-          <div class="navbar-start w-fit">
-            <img
-              class="hidden lg:block"
-              src="c2-assets/logo-header.png"
-              alt="header section's logo"
-            />
-            <img class="lg:hidden" src="c2-assets/mobile-nav-logo.png" alt="" />
-          </div>
-
-          <!-- center navbar -->
-          <div class="navbar-center hidden lg:flex">
-            <ul class="menu menu-horizontal px-1">
-              <li><a class="text-xl" href="#">Product</a></li>
-              <li><a class="text-xl" href="#">Services</a></li>
-              <li><a class="text-xl" href="#">Contact us</a></li>
-            </ul>
-          </div>
-
-          <!-- navbar right side buttons and icons -->
-          <div class="navbar-end w-fit">
-            <div class="hidden lg:block space-x-3">
+        <!-- nav bar -->
+        <nav>
+          <div
+            class="navbar justify-between border-b border-primary-color lg:border-none pt-4 lg:pt-8"
+          >
+            <!-- left menu with logo -->
+            <div class="navbar-start w-fit">
               <img
-                class="inline-block cursor-pointer"
-                src="c2-assets/search.png"
-                alt=""
+                class="hidden lg:block"
+                src="c2-assets/logo-header.png"
+                alt="header section's logo"
               />
               <img
-                class="inline-block cursor-pointer"
-                src="c2-assets/shopping-cart.png"
+                class="lg:hidden"
+                src="c2-assets/mobile-nav-logo.png"
                 alt=""
               />
-              <a
-                href="#"
-                class="btn btn-outline border-2 border-primary-color px-7 font-normal text-xl"
-                >Login</a
-              >
-              <a
-                class="btn btn-primary bg-primary-color border-none text-white px-7 font-normal text-xl hover:bg-btn-hover"
-                href="#"
-                >Register</a
-              >
             </div>
-            <!-- menu icon -->
-            <div class="dropdown">
-              <div
-                tabindex="0"
-                role="button"
-                class="btn btn-ghost px-0 lg:hidden"
-              >
-                <i class="fa-solid fa-bars text-2xl text-primary-color"></i>
+
+            <!-- center navbar -->
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a class="text-xl" href="#">Product</a></li>
+                <li><a class="text-xl" href="#">Services</a></li>
+                <li><a class="text-xl" href="#">Contact us</a></li>
+              </ul>
+            </div>
+
+            <!-- navbar right side buttons and icons -->
+            <div class="navbar-end w-fit">
+              <div class="hidden lg:block space-x-3">
+                <img
+                  class="inline-block cursor-pointer"
+                  src="c2-assets/search.png"
+                  alt=""
+                />
+                <img
+                  class="inline-block cursor-pointer"
+                  src="c2-assets/shopping-cart.png"
+                  alt=""
+                />
+                <a
+                  href="#"
+                  class="btn btn-outline border-2 border-primary-color px-7 font-normal text-xl"
+                  >Login</a
+                >
+                <a
+                  class="btn btn-primary bg-primary-color border-none text-white px-7 font-normal text-xl hover:bg-btn-hover"
+                  href="#"
+                  >Register</a
+                >
+              </div>
+              <!-- menu icon -->
+              <div class="dropdown">
+                <div
+                  tabindex="0"
+                  role="button"
+                  class="btn btn-ghost px-0 lg:hidden"
+                >
+                  <i class="fa-solid fa-bars text-2xl text-primary-color"></i>
+                </div>
               </div>
             </div>
+          </div>
+        </nav>
+
+        <!-- banner section -->
+        <div class="space-y-4 pt-12 lg:pt-24 lg:space-y-8">
+          <!-- banner description -->
+          <div
+            class="text-center px-4 space-y-4 lg:space-y-7 max-w-[827px] mx-auto"
+          >
+            <h1 class="font-semibold text-3xl lg:text-[56px] lg:leading-[60px]">
+              Freshness You
+              <span class="text-primary-color"
+                >Can <br />
+                Count</span
+              >
+              On, Prices You’ll Love!
+            </h1>
+            <p class="font-light max-w-[799px] mx-auto lg:text-xl">
+              Shop your daily essentials at unbeatable prices. From fresh
+              produce to pantry staples, we’ve got you covered every day!
+            </p>
+          </div>
+          <!-- banner profile pic -->
+          <div class="max-w-[1030px] mx-auto">
+            <img
+              class="lg:w-5/6 mx-auto"
+              src="c2-assets/hero-vegetables.png"
+              alt="hero vegetables image"
+            />
           </div>
         </div>
       </header>
